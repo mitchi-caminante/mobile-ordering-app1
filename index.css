@@ -80,7 +80,7 @@ p {
 
 /* Header */
 header {
-    background-image: url('./images/header-banner.jpg');
+    background-image: url('header-banner.jpg');
     background-size: cover;
     padding: 10px 20px;
     width: 100%;

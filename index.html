@@ -1,0 +1,77 @@
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/3121844f9d.js" crossorigin="anonymous"></script>
+    <!-- banner header -->
+    <link rel="preload" as="image" href="header-banner.jpg">
+    <title>Walker's Walking Tacos</title>
+</head>
+<body>
+    <main class="main-container" id="main-container">
+        <header>
+            <hgroup>
+                <h1>Walker's Walking Tacos</h1>
+                <h2>Tacos you can walk with!</h2>
+            </hgroup>
+        </header>
+
+        <section class="menu-items-container" id="menu-items-container">
+            <h2 class="our-menu-title">Our menu</h2>
+            <div class="menu-list" id="menu-list">
+                <!-- Menu items will be added here -->
+            </div>
+        </section>
+        
+        <section class="order-summary-container" id="order-summary-container">
+            <span id="order-summ-heading" class="order-summ-heading">Your order is empty</span>
+            <div class="order-details-el hidden" id="order-details-el">
+                <!-- Order details will be updated here -->
+            </div>
+            <!-- hidden container for gif to show at end of order -->
+            <div id="gif-container" class="hidden">
+                    <iframe src="https://giphy.com/embed/jKaFXbKyZFja0" width="480" height="403" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jKaFXbKyZFja0">via GIPHY</a></p>
+            </div>
+        </section>
+        
+        <!-- modal -->
+        <div class="modal-container hidden" id="modal-container">
+            <div class="modal-content">
+                <button class="modal-close-btn" id="close-btn">close</button>
+                <form class="modal-form">
+                    <h2 class="payment-form-title">Enter Card Details</h2>
+                    <input type="text"
+                    id="cardName"
+                    placeholder="Name on card"
+                    required />
+                    <input type ="number"
+                    id="cardNum"
+                    placeholder="Card number"
+                    required />
+                    <input type="number"
+                    id="cardCvv"
+                    placeholder="CVV"
+                    required />
+                    <p id="order-processing"></p>
+                    <div class="submit-btn-container">
+                        <button type="submit"
+                        value="Submit"
+                        class="submit-btn"
+                        id="payment-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+

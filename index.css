@@ -106,6 +106,7 @@ hgroup {
     position: relative;
     box-shadow: 10px 10px 5px #888888;
     z-index: 999;
+    max-width: 800px;
 }
 
 /* Containers */
@@ -244,6 +245,7 @@ hgroup {
     border-radius: 5px;
 }
 /* Modal */
+
 .modal-container {
     position: fixed;
     display: flex;
@@ -261,6 +263,7 @@ hgroup {
     border-color: 1px solid grey;
     box-shadow: 20px 5px 100px rgba(0, 0, 0, 0.7);
     border-radius: 4px;
+    max-width: fit-content;
 }
 
 /* Hide modal initially */
